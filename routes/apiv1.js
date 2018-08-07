@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var request = require('request');
-var APIKEY = "8ff99ae7d3637e2838d23c7f2ea9a824";
+var APIKEY = process.env.APPKEY;
 
 // var url = "https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=" + APIKEY;
 var forecastURL = "https://api.openweathermap.org/data/2.5/forecast";
